@@ -1,0 +1,36 @@
+tags:
+  - Colaborador # definir a categoria de colaborador 
+description: Endpoint(Rota) para cadastrar um novo colaborador
+parameters:
+  - in: body # Indica que o parametro veio do corpo da requisição 
+    name: corpo
+    required: true
+
+    schema:
+      type: object
+      properties:
+        nome: # E o primeiro input
+          type: string
+          example: teste nome
+        email:
+          type: string
+          example: teste@teste.com
+        senha:
+          type: string
+          example: senha123
+        cargo:
+          type: string
+          example: QA
+        salario:
+          type: number
+          example: 2500.78
+      required:
+        - nome
+        - email
+        - senha
+        - cargo
+        - salario
+responses:
+  201:
+      description: Colaborador cadastrado com sucesso 
+  
