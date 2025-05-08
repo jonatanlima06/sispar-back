@@ -20,6 +20,7 @@ en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_
 filelock==3.16.1
 Flask==3.1.0
 Flask-Bcrypt==1.0.1
+flask-cors==5.0.1
 Flask-SQLAlchemy==3.1.1
 fonttools==4.54.1
 fsspec==2024.10.0
